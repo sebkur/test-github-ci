@@ -33,3 +33,7 @@ jobs:
       run: wine --version
     - name: Show Mono is installed
       run: wine uninstaller --list
+    - name: Run Fakeroot
+      run: fakeroot ls
+    - name: Run dpkg-deb
+      run: dpkg-deb --help
