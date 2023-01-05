@@ -17,6 +17,8 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '17'
+    - name: Show pwd
+      run: pwd
     - name: Show Java version
       run: java --version && dpkg --print-architecture
     - name: Install Wine
